@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <main className="min-h-screen relative bg-linear-to-b from-sky-200  via-sky-50 via-40% to-orange-100 flex items-center justify-center px-6">
+    <main className="min-h-screen relative bg-linear-to-b from-sky-200  via-sky-50 via-40% to-orange-100 flex items-center justify-center px-6 pb-40">
       <div className="max-w-4xl text-center">
         <h1 className="text-5xl leading-[1.05] tracking-tight text-gray-900 md:text-7xl">
           Sustainability insights,
