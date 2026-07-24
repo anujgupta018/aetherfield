@@ -7,12 +7,12 @@ const barHeights = [
 ];
 export default function FloatingCard() {
   return (
-    <div className="relative z-20 flex justify-center mt-32 sm:-mt-40">
+    <div className="relative z-20 flex justify-center -mt-40 sm:-mt-40">
       <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         className="w-full max-w-4xl rounded-4xl border-2 border-gray-900 bg-white shadow-2xl p-4 sm:p-8"
       >
         <div className="mb-4 sm:mb-6">
@@ -96,7 +96,7 @@ export default function FloatingCard() {
                 )}
                 <div
                   style={{ height: `${h}%` }}
-                  className="w-3 bg-gray-900 rounded-t-sm"
+                  className="w-1 bg-gray-900 rounded-t-sm"
                 />
               </div>
             ))}
