@@ -1,11 +1,20 @@
+import { Fraunces, Lora } from "next/font/google";
+
+const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "700"] });
+const lora = Lora({ subsets: ["latin"], weight: ["400", "600"] });
+
 export default function Hero() {
   return (
     <main className="min-h-screen relative bg-linear-to-b from-sky-300  via-sky-50 via-60% to-orange-100 flex items-center justify-center px-6 pb-40">
       <div className="max-w-4xl text-center">
-        <h1 className="text-5xl leading-[1.05] tracking-tight text-gray-900 md:text-7xl">
+        <h1
+          className={` ${fraunces.className} text-5xl leading-[1.05] tracking-tight text-gray-900 md:text-7xl`}
+        >
           Sustainability insights,
         </h1>
-        <h2 className="text-5xl leading-[1.05] tracking-tight text-gray-900 md:text-7xl font-semibold mt-1">
+        <h2
+          className={` ${fraunces.className} text-5xl leading-[1.05] tracking-tight text-gray-900 md:text-7xl font-semibold mt-1`}
+        >
           built for business
         </h2>
         <p className="mt-6  mx-auto text-lg text-gray-900 leading-relaxed">
