@@ -2,12 +2,17 @@
 
 import { Plus } from "lucide-react";
 import { useState } from "react";
+import { Fraunces, Lora } from "next/font/google";
 
+const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "700"] });
+const lora = Lora({ subsets: ["latin"], weight: ["400", "600"] });
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 mx-auto flex max-w-7xl items-center justify-between rounded-full bg-white/10 px-6 py-4 backdrop-blur-xl">
-      <h1 className="font-bold tracking-tighter leading-tight text-2xl ">
+      <h1
+        className={` ${fraunces.className} font-bold tracking-tighter leading-tight text-2xl `}
+      >
         Aetherfield
       </h1>
       <div className=" gap-4 text-shadow-md text-md hidden md:flex">
