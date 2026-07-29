@@ -69,3 +69,41 @@ body {
   mix-blend-mode: multiply;
   opacity: 0.5;
 }
+.footer-weave {
+  background-color: #e8d93c;
+}
+.footer-weave::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      115deg,
+      transparent 0px,
+      transparent 6px,
+      rgba(92, 90, 12, 0.35) 7px,
+      transparent 9px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      125deg,
+      transparent 0px,
+      transparent 10px,
+      rgba(92, 90, 12, 0.2) 11px,
+      transparent 13px,
+      transparent 30px
+    );
+}
+.footer-weave::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    rgba(92, 90, 12, 0.5) 0.7px,
+    transparent 1px
+  );
+  background-size: 3px 3px;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+}
