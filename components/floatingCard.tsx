@@ -28,7 +28,7 @@ export default function FloatingCard() {
           {/* card1 */}
           <div className="rounded-xl bg-gray-50 p-2 sm:p-4 flex flex-col justify-between h-24 sm:h-36">
             <p className="text-[8px] sm:text-xs font-mono text-gray-500">
-              192,000 <sub>2</sub>e
+              192,000 tCO<sub>2</sub>e
             </p>
             <div className="flex items-end justify-between gap-1">
               <span className="text-lg sm:text-3xl font-bold text-gray-900">
